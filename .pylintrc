@@ -1,0 +1,20 @@
+[MASTER]
+
+# Excluir algunos archivos y directorios de los análisis.
+ignore=.git,venv,__pycache__
+
+# Opciones de salida del análisis.
+msg-template={path}:{line}: [{msg_id}({symbol}), {obj}] {msg}
+reports=no
+output-format=colorized
+
+[BASIC]
+
+# Configuración básica del análisis.
+indent-string='    '
+max-line-length=130
+
+[MESSAGES CONTROL]
+
+# Control de advertencias y errores específicos.
+disable=C0111,W0703
